@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleopetra | Supernova</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="bg-animation" id="bgAnimation"></div>
+    
+    <!-- Floating shapes -->
+    <div class="floating-elements">
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+    </div>
+
+    <!-- Header with glassmorphism -->
+    <header>
+        <nav>
+            <div class="logo">CLEOPETRA</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#templates">Templates</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#home" onclick="closeMobileMenu()">Home</a>
+                <a href="#about" onclick="closeMobileMenu()">About</a>
+                <a href="#templates" onclick="closeMobileMenu()">Templates</a>
+                <a href="#contacts" onclick="closeMobileMenu()">Contacts</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Cleopetra by Supernova</h1>
+            <p>A template collection for your startup or business.</p>
+            <a href="#features" class="cta-button">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Revolutionary Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <span class="feature-icon">🚀</span>
+                <h3>Lightning Fast</h3>
+                <p>Optimized performance with blazing-fast load times and smooth animations that create seamless user experiences across all devices.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">✨</span>
+                <h3>Premium Design</h3>
+                <p>Cutting-edge glassmorphism effects, dynamic gradients, and micro-animations that bring your interface to life with modern elegance.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🎯</span>
+                <h3>Smart Interactions</h3>
+                <p>Intuitive user interface with intelligent hover effects, smooth transitions, and responsive feedback that makes every interaction feel magical.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="effect.js"></script>
+</body>
+</html>
